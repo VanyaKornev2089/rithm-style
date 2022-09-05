@@ -1,0 +1,46 @@
+*,*:before, *:after
+    box-sizing: border-box
+    margin: 0
+h1,h2,h3
+    margin: 0
+html
+    font-family:  'El Messiri', sans-serif;
+    font-size: 0.875rem
+    color: $white
+    scroll-behavior: smooth
+    background: $darkblue
+a
+    color: $white
+    text-decoration: none
+.container-normal
+    max-width: 81.125rem
+    width: 100% 
+    margin: auto
+.container-vide
+    max-width: 100.5rem
+    width: 100%
+    margin: auto
+.container-tight
+    max-width: 67.25rem
+    width: 100%
+    margin: auto
+.leafs
+    &-light
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            margin-right: 11.5rem
+            width: 100%
+            height: 100%
+            background: url('../img/left.svg') no-repeat center
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: -12rem
+            width: 100%
+            height: 100%
+            background: url('../img/right.svg') no-repeat center
