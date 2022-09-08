@@ -44,3 +44,27 @@ a
             width: 100%
             height: 100%
             background: url('../img/right.svg') no-repeat center
+    &-blue
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            margin-right: 13.5rem
+            width: 100%
+            height: 100%
+            background: url('../img/left-blue.svg') no-repeat center
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: -14rem
+            width: 100%
+            height: 100%
+            background: url('../img/right-blue.svg') no-repeat center
+.title
+    font-size: 2.625rem
+    line-height: 140%
+    text-align: center
+    font-weight: bold

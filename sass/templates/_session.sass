@@ -1,0 +1,56 @@
+.session
+    padding-bottom: 9.375rem
+    .leafs-blue
+        &::before   
+            margin-right: 13.5rem
+        &::after
+            right: -13.5rem
+    &__title
+        margin-bottom: 7.6875rem
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        &__item
+            position: relative
+            padding: 12.125rem 2.5rem 1.875rem 2.5rem
+            background: url('../img/session-img-normal.jpg') no-repeat center
+            border-radius: 15px
+            margin-bottom: 1.5rem
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background: rgba($blue, 0.5)
+                border-radius: 15px
+                z-index: 0
+            &--high
+                position: relative
+                padding: 28.5rem 6.75rem 3.125rem 3.125rem 
+                background: url('../img/session-img-high.png') no-repeat
+                &::after
+                    position: absolute
+                    content: ''
+                    bottom: 0
+                    right: 0
+                    width: 25.32rem
+                    height: 11px
+                    background: $blue
+                    border-radius: 0px 0px 10px 10px
+            &--wm
+                margin-bottom: 0
+            &--wider_text
+                padding-top: 10rem
+        &__desc
+            font-size: 1.5rem
+            line-height: 140%
+            z-index: 1
+            &--wide
+                max-width: 21rem
+                width: 100%
+  
+        

@@ -1,0 +1,63 @@
+.contacts
+    padding-top: 9.375rem
+    padding-bottom: 5.625rem
+    &-content
+        display: flex
+        justify-content: space-between
+    &-row
+        flex-direction: column
+        background: $blue
+        width: 24.5rem
+        height: 18.125rem
+        padding: 35px 45px
+        border-radius: 8px
+        margin-bottom: 1.5rem 
+        &__title
+            font-size: 1.5rem
+            margin-bottom: 1.25rem
+        &__text
+            font-size: 0.875rem
+            margin-left: 2.5rem
+            opacity: 0.7
+            position: relative
+            margin-bottom: 1.3125rem
+            &:first-of-type
+                &::before
+                    content: ''
+                    top: -5px
+                    left: -36px
+                    width: 20px
+                    height: 20px
+                    background: url('../img/map.png') no-repeat center
+                    position: absolute
+            &:nth-of-type(2)
+                &::before
+                    content: ''
+                    top: -5px
+                    left: -36px
+                    width: 20px
+                    height: 20px
+                    background: url('../img/metro.png') no-repeat center
+                    position: absolute
+            &:nth-of-type(3)
+                &::before
+                    content: ''
+                    top: -5px
+                    left: -36px
+                    width: 20px
+                    height: 20px
+                    background: url('../img/calendar.png') no-repeat center
+                    position: absolute
+.button
+    background: $white
+    color: $blue
+    border: none
+    font-size: 0.8125rem
+    padding: 9px 15px
+    margin-top: 1.875rem
+    cursor: pointer
+.description
+    display: flex
+    flex-direction: column
+    align-items: center
+    
